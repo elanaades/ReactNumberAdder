@@ -15,10 +15,6 @@ class NumberAdder extends React.Component {
         currentMax: ''
     }
 
-    onSubmitClick = () => {
-        
-    }
-
     generateRandomNumber = () => {
         const { currentMax, currentMin } = this.state;
         const min = parseInt(currentMin);
@@ -86,7 +82,6 @@ class NumberAdder extends React.Component {
                     onAddClicked={this.onAddClicked}
                     onMinChange={this.onMinChange}
                     onMaxChange={this.onMaxChange}
-                    onSubmitClick={this.onSubmitClick}
                     onClearClicked={this.onClearClicked}
                     isValid={currentMin && currentMax }
                     currentMin={currentMin}
